@@ -20,6 +20,7 @@ jobs:
       with:
         python-versions: 'cp39-cp39 cp310-cp310 cp311-cp311'
         build-requirements: 'cython numpy'
+        pip-wheel-args: '--build-option=--plat manylinux2014_x86_64'
     - name: Build manylinux Python wheels
       run: |
             ls dist/
