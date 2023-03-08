@@ -7,9 +7,7 @@ https://github.com/phenobarbital/proxylists
 import ast
 from os import path
 from setuptools import setup, find_packages
-import sys
 
-sys.argv.extend(['--plat', 'x86_64'])
 
 def get_path(filename):
     return path.join(path.dirname(path.abspath(__file__)), filename)
