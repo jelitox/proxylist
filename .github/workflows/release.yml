@@ -23,6 +23,7 @@ jobs:
     - name: Build manylinux Python wheels
       run: |
             ls dist/
+            python -m sysconfig
     - name: Publish wheels to Test PyPI
       env:
         TWINE_USERNAME: __token__
