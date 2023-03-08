@@ -54,8 +54,10 @@ setup(
     description=__description__,
     long_description=readme(),
     long_description_content_type='text/markdown',
+    platforms=['POSIX'],
     classifiers=[
         'Development Status :: 4 - Beta',
+        "Operating System :: POSIX :: Linux",        
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'Programming Language :: Python :: 3.9',
