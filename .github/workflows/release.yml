@@ -22,6 +22,7 @@ jobs:
         build-requirements: 'cython numpy'
     - name: Build manylinux Python wheels
       run: |
+            python setup.py sdist bdist_wheel
             ls dist/
     - name: Publish wheels to Test PyPI
       env:
