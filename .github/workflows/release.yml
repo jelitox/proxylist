@@ -20,6 +20,9 @@ jobs:
       with:
         python-versions: 'cp39-cp39 cp310-cp310 cp311-cp311'
         build-requirements: 'cython numpy'
+    - name: Build manylinux Python wheels
+      run: |
+            ls dist/
     - name: Publish wheels to Test PyPI
       env:
         TWINE_USERNAME: __token__
